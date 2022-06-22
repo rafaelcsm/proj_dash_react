@@ -27,12 +27,8 @@ function Dash() {
     ],
 });
   
-
 /*
 
-   <div style={{ width: 600 }}>
-        <LineChart chartData={userData} />
-      </div>
       <div style={{ width: 600 }}>
         <PieChart chartData={userData} />
       </div>
@@ -56,43 +52,3 @@ return (
 };
 
 export default Dash;
-
-
-/*
-function Dash() {
-
-  const [dadosGrafico, setDadosGrafico] = useState([]);
-  const [userData, setUserData] = useState([]);
-
-
-  useEffect(() => {
-    if(dadosGrafico === []){
-      async function fetchData() {
-        let graficos = [];
-        const querySnapshot = await getDocs(collection(db, "graphinfo"));
-        querySnapshot.forEach((doc) => {
-          graficos.push(doc.data());
-    
-        });
-    
-        setDadosGrafico(graficos);
-      }
-      fetchData();
-    }
-    /*else{
-      setUserData(
-        {
-          labels: dadosGrafico.map((data) => data.month),
-          datasets: [{
-            label: "Faturamento",
-            data: dadosGrafico.map((data) => data.comRev),
-            backgroundColor: ['green'],
-            borderColor: 'black',
-            borderWidth: 1
-          }]
-        }
-      );
-    }*/
-    
-  //}, []);
-  //console.log('re',dadosGrafico);

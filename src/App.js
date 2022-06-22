@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Formulario from './components/Form/Formulario';
 import Quemsomos from './components/Quemsomos/Quemsomos';
-import Dash from './Dash/Dash';
+import Dash from './Dash/Dash1';
 import CadProvider from './context/CadProvider';
 import './App.css';
 

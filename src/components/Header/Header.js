@@ -55,11 +55,11 @@ const Header = () => {
               <MenuItem icon={<RiPencilLine /> } ><NavLink to="/faleconosco">Fale Conosco</NavLink></MenuItem>
             </Menu>
           </SidebarContent>
-          <SidebarFooter>
+          
             <Menu iconShape="square">
               <MenuItem>Rafael Martini &copy;2022</MenuItem>
             </Menu>
-          </SidebarFooter>
+          
         </ProSidebar>
       </div>
     </>
