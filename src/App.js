@@ -1,5 +1,10 @@
 //import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Formulario from './components/Form/Formulario';
+import Quemsomos from './components/Quemsomos/Quemsomos';
+import Dash from './Dash/Dash';
+import CadProvider from './context/CadProvider';
 import './App.css';
 
 function App() {
@@ -15,17 +20,23 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          
         >
           Learn React
         </a>
   </header>*/}
-      <BrowserRouter>
+    <BrowserRouter>
+      <Header/>
+
+      <CadProvider>
         <Routes>
-          <Route path="/" element={"Dashboard"} />
-          <Route path="/faleconosco" element={"Entre em contato com a gente"} />
-          <Route path="/quemsomos" element={"Somos uma empresa"} />
+          <Route path="/" element={<Dash />} />
+          <Route path="/faleconosco" element={<Formulario />} />
+          <Route path="/quemsomos" element={<Quemsomos />} />
         </Routes>
-      </BrowserRouter>
+      </CadProvider>
+    </BrowserRouter>
+      
 
     </div>
   );
